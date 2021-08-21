@@ -2,7 +2,7 @@ name: 'Synchronize Submodules'
 
 on:
   schedule:
-    - cron: '37 13 */3 * *'
+    - cron: '0 0 * * *'
 
 jobs:
   sync:
