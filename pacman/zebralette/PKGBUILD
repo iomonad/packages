@@ -1,0 +1,32 @@
+# Maintainer: iomonad <clement@trosa.io>
+
+pkgname=zebralette
+pkgver=2.9.3
+pkgrel=1
+epoch=
+pkgdesc="Easy spectral synth VST from u-he"
+arch=('i686' 'x86_64')
+url="https://u-he.com/products/zebralette/"
+license=('GPL')
+groups=(vt2 vt3)
+depends=()
+makedepends=()
+checkdepends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=(https://dl.u-he.com/releases/Zebra2_293_12092_Linux.tar.xz)
+sha256sums=('fdf68110ff730186e8f49ff54405ab2ebac4e8e2a71aa42b83113f798302b6c6')
+
+noextract=()
+
+package() {
+  cd "$srcdir/Zebra2-12092"
+
+  yes | ./install
+}
