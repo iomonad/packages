@@ -1,3 +1,6 @@
 [submodule "portage"]
 	path = portage
 	url = git@github.com:iomonad/iomonad-overlay.git
+[submodule "flatpak/gnuradio-companion"]
+	path = flatpak/gnuradio-companion
+	url = git@github.com:iomonad/flatpak-gnuradio-companion.git
